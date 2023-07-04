@@ -1,0 +1,30 @@
+.reply-main-container{
+    max-width: 576px;
+    min-height: 180px;
+    background-color: $White;
+    border-radius: 1rem;
+    padding: 1rem 2rem 1rem 1rem ;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    margin-bottom: 1rem;
+    @media screen and (max-width:750px) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+}
+
+.replies-line{
+    position: relative;    
+}
+
+.aside-line{
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 1rem);
+    background-color: $Lightgray;
+    left: 10%;
+
+}

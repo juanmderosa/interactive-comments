@@ -1,0 +1,83 @@
+.comment-main-container{
+    max-width: 720px;
+    min-height: 180px;
+    background-color: $White;
+    border-radius: 1rem;
+    padding: 1rem 2rem 1rem 1rem ;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width:750px) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+}
+.comment-container{
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    @media screen and (max-width:750px) {
+        width: 100%;
+    }
+}
+.inforeply-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width:750px) {
+        position: relative;
+    }
+}
+.info-container{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start ;
+    @media screen and (max-width:750px) {
+        width: 100%;
+    }
+
+}
+
+.reply-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    @media screen and (max-width:750px) {
+        position: absolute;
+        right: 1rem;
+        bottom: -180px;
+    }
+}
+
+.reply-btn{
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.reply-p{
+    color: $Moderateblue;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.avatar{
+    width: 40px;
+    margin-right: 20px;
+}
+.user-name{
+    margin-right: 20px;
+    font-weight: 500;
+    color: $Darkblue;
+}
+.post-time{
+    color: $GrayishBlue;
+}
+
+
+.comment-p{
+    color: $GrayishBlue;
+}

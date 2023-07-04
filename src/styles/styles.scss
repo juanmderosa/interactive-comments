@@ -1,0 +1,49 @@
+@import "./Colors.scss";
+@import "./CommmetContainer.scss";
+@import "./Counter.scss";
+@import "./ReplyMainContainer.scss";
+@import "./PostContainer.scss";
+
+/* Normalize */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    font-weight: 400;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    background-color: $Verylightgray;
+    @media screen and (max-width:750px) {
+       padding: 2rem 1rem;
+    }
+
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
